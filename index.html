@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Projects">Portfolio</a></li>
+                <li><a href="#Certifications">Accreditations</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p><center>HELLO</center></p>
+            <h1><center><span>I'M SHIRISHA VISSOM</span></center></h1>
+            <h2><center>||GRADUATE STUDENT AT TAMU||<br>||INTERN AT RAMAN RESEARCH INSTITUTE|| </center></h2>
+        </div>    
+    </div>
+</div>
+
+
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    Welcome to my personal website! Here, I showcase my expertise in Electrical Engineering with a focus on Physical Design, Static Timing Analysis, and SOC Design. As a VLSI enthusiast, I am excited and privileged to have found this opportunity of being an ongoing graduate student with a Master’s degree in Electrical Engineering with VLSI Physical design as core specialization. With a strong background in Electronics and Communication Engineering from M.S.Ramaiah University of Applied Sciences.<br> I have gained valuable experience as an Electrical Engineer Intern at Raman Research Institute, Bangalore, where I conducted end-to-end testing of hardware systems, specializing in Pre-Silicon integrated testing of analog and digital card designs.<br> I thrive on challenges and have an insatiable appetite for learning new things. I am  passionate towards learning new skills and techniques and am constantly working at improving my skills. I want to  work in a data driven culture where my problem-solving skills can be implemented. <br> Kindly do refer my resume for more information.Additionally, I maintain a Github website where I regularly share the projects I have developed.<br> Thank you for visiting my website! If you have any questions or would like to know more about my work or projects, please feel free to reach out.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                </div>
+                <div class="tab-contents active-tab" id="Experience">
+                    <ul>
+                        <li><span>November 2021 - July 2022</span><br>RAMAN RESEARCH INSTITUTE-Electrical Engineer Intern</li>
+                            <ul>
+                                <li>During my tenure as an Electrical Engineer Intern at Raman Research Institute in Bangalore, I had the opportunity to actively contribute to the pre-silicon hardware integrated testing of both Analog and Digital IC cards.</li>
+                                <li>One of my notable achievements was the testing of the power supply for the Charge Sensitive Pre-Amplifier and amtek-PH300 chip. This involved ensuring stable and reliable power delivery to these critical components.</li>
+                                <li>Through these experiences, I gained valuable insights into the intricacies of hardware testing and developed a strong foundation in ensuring the optimal performance of complex integrated circuits.</li>
+                            </ul>
+                    <ul>
+                        <li><span>May 2020 - June 2020</span><br>Agimus Technologies-Virtual Intern</li>
+                            <ul>
+                                <li>Developed machine learning algorithms utilizing Tensor Flow to classify various data inputs.Specifically, I focused on image classification using webcam images and human activity learning using mobile phone data for real-time analysis.</li>
+                                <li> By leveraging the power of Tensor Flow, I successfully trained models that can accurately classify webcam images in real-time and identify different human activities based on mobile phone data.</li>
+                                <li> These projects demonstrate my expertise in machine learning and showcase my ability to apply advanced algorithms to real-world applications, enabling efficient and effective analysis of visual and behavioral data.</li>
+                            </ul>
+                    </ul>
+                    <ul>
+                        <li><span>June 2019 - August 2019</span><br>RAMAN RESEARCH INSTITUTE-Electrical Engineer Intern</li>
+                            <ul>
+                                <li>Designed and developed a receiver chain incorporating Low-Noise Amplifiers, Optical fibers, and filters, operating within a bandwidth of 1350-1650 MHz.</li>
+                                <li> This analog receiver was seamlessly connected to a horn antenna for input and utilized high-speed optical fibers to interface with a Software Defined Radio (SDR) for digitization and data recording, ensuring accurate signal acquisition and analysis.</li>
+                            </ul>
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Master's Degree<br> August 2022-Current</span><br>Texas A&M University, College Station, Texas <br> Pursuing my Masters in Electrical Engineering<br>Specialisation in VLSI Design (Running CGPA 3.5)</li>
+                        <li><span>Bachelor's Degree<br>August 2017-August 2021</span><br>M.S. Ramaiah University of Applied Sciences, Bangalore, India<br> Pursued Electronics and Communication Engineering<br> Graduated with a CGPA 9.11</li>
+                        <li><span>Secondary School<br>August 2015- August 2017</span><br>Narayana PU College - Bangalore<br> 89%</li>
+                        <li><span>Senior School <br> August 2015</span><br>Sri Chaitanya Techno School<br> 9.6/10</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Skills">
+                    <ul>
+                        <li><span>Design Tools</span><br>Schematic & Layout (Cadence Virtuoso)<br>Digital Design (Xilinx Zynq-7000 SOC, ISE Design Tool,Icarus Verilog)</li>
+                        <li><span>EDA Tools</span><br>Synthesis (Synopsys Design Compiler, YOSYS Synthesis Tool)<br> Place and Route (Cadence Innovus,QRouter 1.4)</li>
+                        <li><span>Static Timing Analysis Tools</span><br>STA (Synopsys Primetime,OpenSTA,Vesta)</li>
+                        <li><span>Simulation Tools</span><br>NI Multisim, ModelSim, Calibre, ADEL</li>
+                        <li><span>Languages</span><br>Python, TCL, PERL, Verilog</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------Project Portfolio------------ -->
+<div id="Projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div>
+                <h3>Design-and-synthesis-of-Cruise-control-logic</h3>
+                <p> Synthesized the RTL Design to build gate-level netlist, performed Pre-layout STA and also designed the SDC constraint. Generated SPEF Files to determine the Parasitic RC of the nets for facilitating the evaluation of crosstalk and enabling signoff STA analysis. </p>
+                <a href="https://github.com/shirishavissom/Design-and-synthesis-of-Cruise-control-logic.git">See more</a>
+            </div>
+            <div>
+                <h3>Design-Characterization-of-a-D-Flip-flop</h3>
+                <p>Created a customized Flip-Flop and meticulously characterized its key parameters, including delay, input capacitance, setup time, and hold time, ensuring a comprehensive understanding of its performance characteristics.</p>
+                <a href="https://github.com/shirishavissom/Design-Characterization-of-a-D-Flip-flop">See more</a>
+            </div>
+            <div>
+                <h3>Design and Performance analysis of a Multiplier</h3>
+                <p> The RTL netlist was synthesized using the Yosys synthesis tool within the Qflow framework. Subsequently, a meticulously engineered floorplan was developed to meet the specified die width and height requirements. Pre-layout static timing analysis (STA) was performed, ensuring a utilization factor of 50% and an aspect ratio of 0.6, thereby optimizing the design for efficient utilization of resources and meeting design constraints.  </p>
+                <a href="#">See more</a>
+            </div>
+            <div>
+                <h3>Design of 8-bit pipelined Adder with buffered H-clock tree</h3>
+                <p> The layout design of an 8-bit Pipelined Adder with a Buffered H-clock tree was executed. This involved conducting DRC and LVS  checks to ensure adherence to design guidelines and correct functionality. The H-Tree clock structure was meticulously designed to minimize clock skew. To determine the maximum operating frequency, considerations were made for the setup time, cell delay, and the insertion delay of the D-flipflops.  </p>
+                <a href="#">See more</a>
+            </div>
+            <div>
+                <h3>Cell Characterisation using spectre</h3>
+                <p> The standard cells of the pipelined adder were thoroughly characterized, with a focus on ensuring the typical propagation delay of the cells. Transistor-level circuit simulation using Spectre was conducted to achieve the specified input capacitance, thus validating and optimizing the circuit design for efficient operation.  </p>
+                <a href="#">See more</a>
+            </div>
+            <div>
+                <h3>Design-of-Virtual-Piano-using-PiezoElectric-Sensors </h3>
+                <p> The aim of the Arduino Piano with Piezoelectric Sensors project is to create a musical instrument that can be played by pressing piezoelectric sensors connected to an Arduino board.  </p>
+                <a href="https://github.com/shirishavissom/Design-of-Virtual-Piano-using-PiezoElectric-Sensors">See more</a>
+            </div>
+            <div>
+                <h3>Development-of-Passive-Radar-System </h3>
+                <p> Developed an end-to-end system in a laboratory test setup. The transmitted signal and the reflections were generated from the Doppler signature and processed using the dynamic spectra. Acceleration of 24km/s^2 was estimated.  </p>
+                <a href="https://github.com/shirishavissom/Development-of-Passive-Radar-System-">See more</a>
+            </div>
+            <div>
+                <h3>Compressive-sensing of 1D signals and 2D images</h3>
+                <p> A compressed sensing method based on L-1 optimization for 1-D signals and 2-D images has been created, with multiple transforms used to identify the optimum recovery technique.  </p>
+                <a href="https://github.com/shirishavissom/Compressive-sensing">See more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------Certifications---------------- -->
+<div id="Certifications">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div class="Certifications-list">
+            <div>
+                <!--<i class="fas"></i>-->
+                <h2>UDEMY- VSD Static Timing Analysis - I</h2>
+                <p> Equipped with efficient methods, I gained a comprehensive understanding of STA checks for timing closure and established a strong foundation in timing analysis fundamentals. This enabled me to conduct thorough quality analyses on real designs, leveraging my comprehension of industrial STA processes and employing step-by-step and structured timing analysis for meticulous evaluations.</p>
+                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-e2450a95-2fc6-45ce-8174-f5bbe705f9ab.pdf">Learn more</a>
+            </div>
+            <div>
+                <!--<i class="fas fa-crop-alt"></i>-->
+                <h2>UDEMY- VSD-Physical Design Webinar using EDA tool 'Proton'</h2>
+                <p>I acquired proficiency in leveraging open-source tools to execute PNR tasks for designs with RTL netlists. Through PROTON, I gained expertise in various chip-level activities encompassing floorplanning, power planning, placement, and routing. Furthermore, I successfully conducted STA on post-layout designs, providing valuable insights into critical parameters like frequency, net count, instance count, and runtime.</p>
+                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-60e709a9-d1e2-4b9f-a2b2-7800c29902c5.pdf">Learn more</a>
+            </div>
+            <div>
+                <!--<i class="fab fa-app-store"></i>-->
+                <h2>UDEMY- VSD-Physical Design Flow</h2>
+                <p>Understanding of Industrial Physical Design Flow. </p>
+                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-3e18e8c9-b9e5-4aaa-8aa4-99c4f979c69c.pdf">Learn more</a>
+            </div>
+            <div>
+                <!--<i class="fab fa-app-store"></i>-->
+                <h2>Cadence- Basic Static Timing Analysis v2.0</h2>
+                <p>Throughout the course, I developed a robust comprehension of core static timing analysis principles and adeptly employed them in the pragmatic establishment of design constraints. I effectively leveraged these principles to ascertain slack values across diverse path categories, proactively identifying prospective timing challenges, and conducted comprehensive examinations of static timing analysis tool reports. </p>
+                <a href="https://www.credly.com/badges/1556d551-6a0b-455f-aa95-813dd73690df/public_url">Learn more</a>
+            </div>
+            <div>
+                <!--<i class="fab fa-app-store"></i>-->
+                <h2>UDEMY- Mixed Signal Physical Design Flow with sky130</h2>
+                <p>This project provides an extensive exploration of the PNR process for an analog IP, specifically focusing on a 2:1 analog multiplexer and utilizing the open-source EDA tool Openlane. It thoroughly examines the crucial steps involved in modifying existing IP layouts to ensure compatibility with the EDA tools. Furthermore, the project covers the Multi-height RTL2GDS flow for Mixed Signal SoC </p>
+                <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-688f7def-d130-4757-b1fd-8334f9652aac.pdf">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="Contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-list">
+            <!--<div>
+                <i class="fas fa-phone"></i> 
+                <h2>CALL ME AT </h2>
+                <p>Phone: +1 5135007767</p>
+            </div>-->
+            <div>
+                <i class="fas fa-paper-plane"></i> 
+                <h2>EMAIL ME AT </h2>
+                <p>shirishavissom02@gmail.com</p>
+            </div>
+            <div>
+                <i class="fab fa-linkedin"></i><br>
+                <a href="https://www.linkedin.com/in/Shirisha-vissom/"> LinkedIn</a>
+            </div>
+            <div>
+                <i class="fab fa-github"></i><br>
+                <a href="https://github.com/shirishavissom"> Github</a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/shirisha-vissom/overlay/1635525355191/single-media-viewer/?profileId=ACoAACy_RUcBR5vU5VRBeabCGRkRkRM3Zsa6dJQ"> <br>Download Resume</a>
+            </div>
+        </div>
+            <!--<div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>-->
+    </div>
+    <!--<div class="copyright">
+        <p>Copyright © Kevin. Made wtih <i class="fas fa-heart"></i> by <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1">Easy Tutorials</a></p>
+    </div>-->
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
